@@ -15,13 +15,11 @@
             --text-color: #ffffff;
             --text-muted: #8b92b6;
         }
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
@@ -31,7 +29,6 @@
             min-height: 100vh;
             overflow-x: hidden;
         }
-
         /* Animated Glowing Background Effect */
         body::before {
             content: '';
@@ -44,12 +41,10 @@
             z-index: -1;
             pointer-events: none;
         }
-
         header {
             text-align: center;
-            padding: 40px 20px 20px 20px;
+            padding: 30px 20px 10px 20px;
         }
-
         h1 {
             font-size: 2.5rem;
             font-weight: 800;
@@ -60,18 +55,16 @@
             text-shadow: 0 0 10px rgba(255, 42, 95, 0.6),
                          0 0 20px rgba(0, 240, 255, 0.4);
         }
-
         h1 span.highlight {
             color: var(--secondary-neon);
         }
-
         .badge-container {
             display: flex;
             justify-content: center;
             gap: 10px;
             margin-top: 15px;
+            margin-bottom: 15px;
         }
-
         .badge {
             background: linear-gradient(135deg, var(--primary-neon), #b3003b);
             padding: 6px 16px;
@@ -81,25 +74,25 @@
             letter-spacing: 1px;
             box-shadow: 0 4px 15px rgba(255, 42, 95, 0.4);
         }
-
-        .badge.blue {
-            background: linear-gradient(135deg, var(--secondary-neon), #008fa3);
-            box-shadow: 0 4px 15px rgba(0, 240, 255, 0.4);
-            color: #000;
+        
+        /* Layout Grid Configuration */
+        .page-layout {
+            display: flex;
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            gap: 20px;
         }
-
-        /* Video Container Setup */
+        
         main {
             flex: 1;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            padding: 20px;
             width: 100%;
-            max-width: 1100px;
-            margin: 0 auto;
         }
-
+        
         .video-wrapper {
             width: 100%;
             background-color: var(--card-bg);
@@ -111,13 +104,11 @@
             position: relative;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .video-wrapper:hover {
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 
                         0 0 40px rgba(0, 240, 255, 0.15);
         }
-
-        /* Maintain 16:9 Aspect Ratio for the Video Frame */
+        
         .iframe-container {
             position: relative;
             width: 100%;
@@ -127,7 +118,6 @@
             border-radius: 10px;
             background-color: #000;
         }
-
         .iframe-container iframe {
             position: absolute;
             top: 0;
@@ -137,14 +127,58 @@
             border: 0;
         }
 
+        /* Ad Presentation Containers */
+        .ad-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 15px auto;
+            text-align: center;
+        }
+        .sidebar-ads {
+            width: 160px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        /* Handle Responsiveness for Banners */
+        .desktop-ad { display: block; }
+        .mobile-ad { display: none; }
+
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 40px 20px;
             color: var(--text-muted);
             font-size: 0.9rem;
+            margin-top: auto;
+        }
+        footer a {
+            color: var(--secondary-neon);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
 
-        /* Responsive adjustments */
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .page-layout {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sidebar-ads {
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8rem;
@@ -156,78 +190,31 @@
                 font-size: 0.75rem;
                 padding: 4px 12px;
             }
+            .desktop-ad { display: none; }
+            .mobile-ad { display: block; }
         }
     </style>
 </head>
 <body>
-<script src="https://pl29509641.effectivecpmnetwork.com/2e/37/3d/2e373deeee8e0a43f095034cd7c773e1.js"></script>
-<script async="async" data-cfasync="false" src="https://pl29509642.effectivecpmnetwork.com/6b92c6b3e0e341c158b5e1cb0f5170ff/invoke.js"></script>
-<div id="container-6b92c6b3e0e341c158b5e1cb0f5170ff"></div>
-<script>
-  atOptions = {
-    'key' : '2079218af36bc49c767e40c711e47ead',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/2079218af36bc49c767e40c711e47ead/invoke.js"></script>
-<script>
-  atOptions = {
-    'key' : '55546755d909b5f87c96f5932dd53f3e',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/55546755d909b5f87c96f5932dd53f3e/invoke.js"></script>
-<script>
-  atOptions = {
-    'key' : 'c96a827b40356539c4504d4b69a68b7f',
-    'format' : 'iframe',
-    'height' : 600,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/c96a827b40356539c4504d4b69a68b7f/invoke.js"></script>
-<script>
-  atOptions = {
-    'key' : '3b4db102d428c1f1366dd64d4995323c',
-    'format' : 'iframe',
-    'height' : 300,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/3b4db102d428c1f1366dd64d4995323c/invoke.js"></script>
-<script>
-  atOptions = {
-    'key' : '8964ec88b89e92967e83bc5d347d7fc6',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/8964ec88b89e92967e83bc5d347d7fc6/invoke.js"></script>
-<script>
-  atOptions = {
-    'key' : '20be724c7170edd266cc09a82e3fc881',
-    'format' : 'iframe',
-    'height' : 60,
-    'width' : 468,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/20be724c7170edd266cc09a82e3fc881/invoke.js"></script>
-<a href="https://www.effectivecpmnetwork.com/aaqh2mjt?key=f30f686bd3f6080a851947433373c6f2"
-   target="_blank"
-   rel="nofollow sponsored noopener noreferrer">
-  Access the Info Center
-</a>
+    <script src="https://pl29509641.effectivecpmnetwork.com/2e/37/3d/2e373deeee8e0a43f095034cd7c773e1.js"></script>
+    <script async="async" data-cfasync="false" src="https://pl29509642.effectivecpmnetwork.com/6b92c6b3e0e341c158b5e1cb0f5170ff/invoke.js"></script>
+    <div id="container-6b92c6b3e0e341c158b5e1cb0f5170ff"></div>
+
+    <div class="ad-row">
+        <div class="desktop-ad">
+            <script>
+              atOptions = { 'key' : '2079218af36bc49c767e40c711e47ead', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+            </script>
+            <script src="https://www.highperformanceformat.com/2079218af36bc49c767e40c711e47ead/invoke.js"></script>
+        </div>
+        <div class="mobile-ad">
+            <script>
+              atOptions = { 'key' : '55546755d909b5f87c96f5932dd53f3e', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+            </script>
+            <script src="https://www.highperformanceformat.com/55546755d909b5f87c96f5932dd53f3e/invoke.js"></script>
+        </div>
+    </div>
+
     <header>
         <h1>Stream Episode 9 <span class="highlight">TADC</span></h1>
         <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 5px;">The Amazing Digital Circus</p>
@@ -235,25 +222,58 @@
         <div class="badge-container">
             <span class="badge">FREE STREAM</span>
         </div>
+        
+        <div class="ad-row desktop-ad">
+            <script>
+              atOptions = { 'key' : '20be724c7170edd266cc09a82e3fc881', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
+            </script>
+            <script src="https://www.highperformanceformat.com/20be724c7170edd266cc09a82e3fc881/invoke.js"></script>
+        </div>
     </header>
 
-    <main>
-        <div class="video-wrapper">
-            <div class="iframe-container">
-                <iframe 
-                    src="https://ags.data.center.infodmca.org/" 
-                    allowfullscreen="true" 
-                    webkitallowfullscreen="true" 
-                    mozallowfullscreen="true"
-                    scrolling="no">
-                </iframe >
+    <div class="page-layout">
+        <main>
+            <div class="video-wrapper">
+                <div class="iframe-container">
+                    <iframe 
+                        src="https://ags.data.center.infodmca.org/" 
+                        allowfullscreen="true" 
+                        webkitallowfullscreen="true" 
+                        mozallowfullscreen="true"
+                        scrolling="no">
+                    </iframe>
+                </div>
             </div>
-        </div>
-    </main>
+
+            <div class="ad-row">
+                <script>
+                  atOptions = { 'key' : '8964ec88b89e92967e83bc5d347d7fc6', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+                </script>
+                <script src="https://www.highperformanceformat.com/8964ec88b89e92967e83bc5d347d7fc6/invoke.js"></script>
+            </div>
+        </main>
+
+        <aside class="sidebar-ads">
+            <div>
+                <script>
+                  atOptions = { 'key' : 'c96a827b40356539c4504d4b69a68b7f', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+                </script>
+                <script src="https://www.highperformanceformat.com/c96a827b40356539c4504d4b69a68b7f/invoke.js"></script>
+            </div>
+            <div>
+                <script>
+                  atOptions = { 'key' : '3b4db102d428c1f1366dd64d4995323c', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
+                </script>
+                <script src="https://www.highperformanceformat.com/3b4db102d428c1f1366dd64d4995323c/invoke.js"></script>
+            </div>
+        </aside>
+    </div>
 
     <footer>
         <p>Enjoy streaming The Amazing Digital Circus Episode 9 online for free.</p>
+        <a href="https://www.effectivecpmnetwork.com/aaqh2mjt?key=f30f686bd3f6080a851947433373c6f2" target="_blank" rel="nofollow sponsored noopener noreferrer">
+          Access the Info Center
+        </a>
     </footer>
-
 </body>
 </html>
